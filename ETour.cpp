@@ -59,7 +59,7 @@ int main()
 	file1.open("input.lp");
 	file1 << input;
 	file1.close();
-	system("clingo newFinal input.lp > abc.txt");
+	system("clingo input.lp > abc.txt");
 	ifstream file ( "abc.txt" );
 	string value;
 	int i=0;
